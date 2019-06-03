@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5D3632922A12DC700136341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3632822A12DC700136341 /* AppDelegate.m */; };
+		B5D3633122A12DC800136341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D3633022A12DC800136341 /* Assets.xcassets */; };
+		B5D3633422A12DC800136341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D3633222A12DC800136341 /* LaunchScreen.storyboard */; };
+		B5D3633722A12DC800136341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3633622A12DC800136341 /* main.m */; };
+		B5D3634722A12E2300136341 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3634222A12E2300136341 /* RootNavigationController.m */; };
+		B5D3634822A12E2300136341 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3634522A12E2300136341 /* RootViewController.m */; };
+		B5D3637322A12E3200136341 /* AddFtpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3634D22A12E3200136341 /* AddFtpTableViewController.m */; };
+		B5D3637422A12E3200136341 /* TextfieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635022A12E3200136341 /* TextfieldTableViewCell.m */; };
+		B5D3637522A12E3200136341 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635522A12E3200136341 /* MainTableViewController.m */; };
+		B5D3637622A12E3200136341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D3635722A12E3200136341 /* Main.storyboard */; };
+		B5D3637722A12E3200136341 /* DisplayCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635C22A12E3200136341 /* DisplayCellFrame.m */; };
+		B5D3637822A12E3200136341 /* FtpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635F22A12E3200136341 /* FtpViewController.m */; };
+		B5D3637922A12E3200136341 /* DisplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636222A12E3200136341 /* DisplayModel.m */; };
+		B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */; };
+		B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */; };
+		B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */; };
+		B5D3637D22A12E3200136341 /* AssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636F22A12E3200136341 /* AssetModel.m */; };
+		B5D3637E22A12E3200136341 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3637022A12E3200136341 /* AlbumModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5D3632422A12DC700136341 /* ECFTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECFTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D3632722A12DC700136341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5D3632822A12DC700136341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5D3633022A12DC800136341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5D3633322A12DC800136341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5D3633522A12DC800136341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D3633622A12DC800136341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5D3633F22A12E0D00136341 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B5D3634222A12E2300136341 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		B5D3634322A12E2300136341 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		B5D3634522A12E2300136341 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B5D3634622A12E2300136341 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B5D3634C22A12E3200136341 /* AddFtpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFtpTableViewController.h; sourceTree = "<group>"; };
+		B5D3634D22A12E3200136341 /* AddFtpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFtpTableViewController.m; sourceTree = "<group>"; };
+		B5D3635022A12E3200136341 /* TextfieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfieldTableViewCell.m; sourceTree = "<group>"; };
+		B5D3635122A12E3200136341 /* TextfieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextfieldTableViewCell.h; sourceTree = "<group>"; };
+		B5D3635422A12E3200136341 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		B5D3635522A12E3200136341 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B5D3635822A12E3200136341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5D3635B22A12E3200136341 /* DisplayCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayCellFrame.h; sourceTree = "<group>"; };
+		B5D3635C22A12E3200136341 /* DisplayCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayCellFrame.m; sourceTree = "<group>"; };
+		B5D3635E22A12E3200136341 /* FtpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpViewController.h; sourceTree = "<group>"; };
+		B5D3635F22A12E3200136341 /* FtpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpViewController.m; sourceTree = "<group>"; };
+		B5D3636122A12E3200136341 /* DisplayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayModel.h; sourceTree = "<group>"; };
+		B5D3636222A12E3200136341 /* DisplayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayModel.m; sourceTree = "<group>"; };
+		B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeableCollectionViewCell.m; sourceTree = "<group>"; };
+		B5D3636522A12E3200136341 /* ChangeableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeableCollectionViewCell.h; sourceTree = "<group>"; };
+		B5D3636922A12E3200136341 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListTableViewController.m; sourceTree = "<group>"; };
+		B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListTableViewController.h; sourceTree = "<group>"; };
+		B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		B5D3636E22A12E3200136341 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		B5D3636F22A12E3200136341 /* AssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetModel.m; sourceTree = "<group>"; };
+		B5D3637022A12E3200136341 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
+		B5D3637122A12E3200136341 /* AssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetModel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D3632122A12DC700136341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5D3631B22A12DC700136341 = {
+			isa = PBXGroup;
+			children = (
+				B5D3632622A12DC700136341 /* ECFTPManager */,
+				B5D3632522A12DC700136341 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D3632522A12DC700136341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3632422A12DC700136341 /* ECFTPManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D3632622A12DC700136341 /* ECFTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634022A12E2300136341 /* Base */,
+				B5D3633E22A12DEB00136341 /* AppDelegate */,
+				B5D3634922A12E3200136341 /* Modules */,
+				B5D3633D22A12DE200136341 /* Supporting Files */,
+			);
+			path = ECFTPManager;
+			sourceTree = "<group>";
+		};
+		B5D3633D22A12DE200136341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3633022A12DC800136341 /* Assets.xcassets */,
+				B5D3633222A12DC800136341 /* LaunchScreen.storyboard */,
+				B5D3633522A12DC800136341 /* Info.plist */,
+				B5D3633622A12DC800136341 /* main.m */,
+				B5D3633F22A12E0D00136341 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5D3633E22A12DEB00136341 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3632722A12DC700136341 /* AppDelegate.h */,
+				B5D3632822A12DC700136341 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B5D3634022A12E2300136341 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634122A12E2300136341 /* NavigationController */,
+				B5D3634422A12E2300136341 /* RootViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5D3634122A12E2300136341 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634222A12E2300136341 /* RootNavigationController.m */,
+				B5D3634322A12E2300136341 /* RootNavigationController.h */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		B5D3634422A12E2300136341 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634522A12E2300136341 /* RootViewController.m */,
+				B5D3634622A12E2300136341 /* RootViewController.h */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		B5D3634922A12E3200136341 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634A22A12E3200136341 /* 添加Ftp */,
+				B5D3635222A12E3200136341 /* 首页 */,
+				B5D3635922A12E3200136341 /* 显示FTP文件 */,
+				B5D3636622A12E3200136341 /* 照片库 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B5D3634A22A12E3200136341 /* 添加Ftp */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634B22A12E3200136341 /* Controller */,
+				B5D3634E22A12E3200136341 /* Model */,
+				B5D3634F22A12E3200136341 /* View */,
+			);
+			path = "添加Ftp";
+			sourceTree = "<group>";
+		};
+		B5D3634B22A12E3200136341 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3634C22A12E3200136341 /* AddFtpTableViewController.h */,
+				B5D3634D22A12E3200136341 /* AddFtpTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D3634E22A12E3200136341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D3634F22A12E3200136341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635022A12E3200136341 /* TextfieldTableViewCell.m */,
+				B5D3635122A12E3200136341 /* TextfieldTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5D3635222A12E3200136341 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635322A12E3200136341 /* Controller */,
+				B5D3635622A12E3200136341 /* View */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		B5D3635322A12E3200136341 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635422A12E3200136341 /* MainTableViewController.h */,
+				B5D3635522A12E3200136341 /* MainTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D3635622A12E3200136341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635722A12E3200136341 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5D3635922A12E3200136341 /* 显示FTP文件 */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635A22A12E3200136341 /* Logic */,
+				B5D3635D22A12E3200136341 /* Controller */,
+				B5D3636022A12E3200136341 /* Model */,
+				B5D3636322A12E3200136341 /* View */,
+			);
+			path = "显示FTP文件";
+			sourceTree = "<group>";
+		};
+		B5D3635A22A12E3200136341 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635B22A12E3200136341 /* DisplayCellFrame.h */,
+				B5D3635C22A12E3200136341 /* DisplayCellFrame.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B5D3635D22A12E3200136341 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3635E22A12E3200136341 /* FtpViewController.h */,
+				B5D3635F22A12E3200136341 /* FtpViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D3636022A12E3200136341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3636122A12E3200136341 /* DisplayModel.h */,
+				B5D3636222A12E3200136341 /* DisplayModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D3636322A12E3200136341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */,
+				B5D3636522A12E3200136341 /* ChangeableCollectionViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5D3636622A12E3200136341 /* 照片库 */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3636722A12E3200136341 /* Logic */,
+				B5D3636822A12E3200136341 /* Controller */,
+				B5D3636D22A12E3200136341 /* Model */,
+				B5D3637222A12E3200136341 /* View */,
+			);
+			path = "照片库";
+			sourceTree = "<group>";
+		};
+		B5D3636722A12E3200136341 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B5D3636822A12E3200136341 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3636922A12E3200136341 /* PhotoDetailViewController.h */,
+				B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */,
+				B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */,
+				B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D3636D22A12E3200136341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3636E22A12E3200136341 /* AlbumModel.h */,
+				B5D3636F22A12E3200136341 /* AssetModel.m */,
+				B5D3637022A12E3200136341 /* AlbumModel.m */,
+				B5D3637122A12E3200136341 /* AssetModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D3637222A12E3200136341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5D3632322A12DC700136341 /* ECFTPManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D3633A22A12DC800136341 /* Build configuration list for PBXNativeTarget "ECFTPManager" */;
+			buildPhases = (
+				B5D3632022A12DC700136341 /* Sources */,
+				B5D3632122A12DC700136341 /* Frameworks */,
+				B5D3632222A12DC700136341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECFTPManager;
+			productName = ECFTPManager;
+			productReference = B5D3632422A12DC700136341 /* ECFTPManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D3631C22A12DC700136341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Emma;
+				TargetAttributes = {
+					B5D3632322A12DC700136341 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B5D3631F22A12DC700136341 /* Build configuration list for PBXProject "ECFTPManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5D3631B22A12DC700136341;
+			productRefGroup = B5D3632522A12DC700136341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D3632322A12DC700136341 /* ECFTPManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5D3632222A12DC700136341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D3633422A12DC800136341 /* LaunchScreen.storyboard in Resources */,
+				B5D3633122A12DC800136341 /* Assets.xcassets in Resources */,
+				B5D3637622A12E3200136341 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D3632022A12DC700136341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D3637522A12E3200136341 /* MainTableViewController.m in Sources */,
+				B5D3637D22A12E3200136341 /* AssetModel.m in Sources */,
+				B5D3637922A12E3200136341 /* DisplayModel.m in Sources */,
+				B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */,
+				B5D3637822A12E3200136341 /* FtpViewController.m in Sources */,
+				B5D3637422A12E3200136341 /* TextfieldTableViewCell.m in Sources */,
+				B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */,
+				B5D3637722A12E3200136341 /* DisplayCellFrame.m in Sources */,
+				B5D3637E22A12E3200136341 /* AlbumModel.m in Sources */,
+				B5D3634722A12E2300136341 /* RootNavigationController.m in Sources */,
+				B5D3633722A12DC800136341 /* main.m in Sources */,
+				B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */,
+				B5D3632922A12DC700136341 /* AppDelegate.m in Sources */,
+				B5D3637322A12E3200136341 /* AddFtpTableViewController.m in Sources */,
+				B5D3634822A12E2300136341 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5D3633222A12DC800136341 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D3633322A12DC800136341 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5D3635722A12E3200136341 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D3635822A12E3200136341 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5D3633822A12DC800136341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5D3633922A12DC800136341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5D3633B22A12DC800136341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQFPSFXV9V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ECFTPManager/PrefixHeader.pch";
+				INFOPLIST_FILE = ECFTPManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csike.ECFTPManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5D3633C22A12DC800136341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQFPSFXV9V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ECFTPManager/PrefixHeader.pch";
+				INFOPLIST_FILE = ECFTPManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.csike.ECFTPManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D3631F22A12DC700136341 /* Build configuration list for PBXProject "ECFTPManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D3633822A12DC800136341 /* Debug */,
+				B5D3633922A12DC800136341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D3633A22A12DC800136341 /* Build configuration list for PBXNativeTarget "ECFTPManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D3633B22A12DC800136341 /* Debug */,
+				B5D3633C22A12DC800136341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D3631C22A12DC700136341 /* Project object */;
+}
