@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5290F3022A4B6B8009B09C9 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F2F22A4B6B8009B09C9 /* PhotoCollectionViewCell.m */; };
+		B5290F3922A4BEBE009B09C9 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F3822A4BEBE009B09C9 /* PhotoModel.m */; };
+		B5290F3C22A4BF17009B09C9 /* PhotoCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F3B22A4BF17009B09C9 /* PhotoCellFrame.m */; };
+		B541D9C022A4F73E00B4291D /* NSObject+WZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B541D9BD22A4F73E00B4291D /* NSObject+WZCommon.m */; };
+		B541D9C122A4F73E00B4291D /* WZToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B541D9BE22A4F73E00B4291D /* WZToast.m */; };
+		B541D9C222A4F73E00B4291D /* WZMediaFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B541D9BF22A4F73E00B4291D /* WZMediaFetcher.m */; };
+		B541D9C522A521FE00B4291D /* testTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B541D9C422A521FE00B4291D /* testTableViewCell.m */; };
 		B5D3632922A12DC700136341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3632822A12DC700136341 /* AppDelegate.m */; };
 		B5D3633122A12DC800136341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D3633022A12DC800136341 /* Assets.xcassets */; };
 		B5D3633422A12DC800136341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D3633222A12DC800136341 /* LaunchScreen.storyboard */; };
@@ -23,11 +30,28 @@
 		B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */; };
 		B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */; };
 		B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */; };
-		B5D3637D22A12E3200136341 /* AssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636F22A12E3200136341 /* AssetModel.m */; };
-		B5D3637E22A12E3200136341 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3637022A12E3200136341 /* AlbumModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5290F2E22A4B6B8009B09C9 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		B5290F2F22A4B6B8009B09C9 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		B5290F3222A4BA0E009B09C9 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		B5290F3322A4BA2A009B09C9 /* URLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
+		B5290F3422A4BA92009B09C9 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		B5290F3522A4BAB6009B09C9 /* FontAndColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+		B5290F3622A4BACE009B09C9 /* ThirdMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdMacros.h; sourceTree = "<group>"; };
+		B5290F3722A4BEBE009B09C9 /* PhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
+		B5290F3822A4BEBE009B09C9 /* PhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
+		B5290F3A22A4BF17009B09C9 /* PhotoCellFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCellFrame.h; sourceTree = "<group>"; };
+		B5290F3B22A4BF17009B09C9 /* PhotoCellFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCellFrame.m; sourceTree = "<group>"; };
+		B541D9BA22A4F73E00B4291D /* NSObject+WZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WZCommon.h"; sourceTree = "<group>"; };
+		B541D9BB22A4F73E00B4291D /* WZToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZToast.h; sourceTree = "<group>"; };
+		B541D9BC22A4F73E00B4291D /* WZMediaFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMediaFetcher.h; sourceTree = "<group>"; };
+		B541D9BD22A4F73E00B4291D /* NSObject+WZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WZCommon.m"; sourceTree = "<group>"; };
+		B541D9BE22A4F73E00B4291D /* WZToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZToast.m; sourceTree = "<group>"; };
+		B541D9BF22A4F73E00B4291D /* WZMediaFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMediaFetcher.m; sourceTree = "<group>"; };
+		B541D9C322A521FE00B4291D /* testTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testTableViewCell.h; sourceTree = "<group>"; };
+		B541D9C422A521FE00B4291D /* testTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTableViewCell.m; sourceTree = "<group>"; };
 		B5D3632422A12DC700136341 /* ECFTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECFTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D3632722A12DC700136341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5D3632822A12DC700136341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,10 +83,6 @@
 		B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListTableViewController.m; sourceTree = "<group>"; };
 		B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListTableViewController.h; sourceTree = "<group>"; };
 		B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
-		B5D3636E22A12E3200136341 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
-		B5D3636F22A12E3200136341 /* AssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetModel.m; sourceTree = "<group>"; };
-		B5D3637022A12E3200136341 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
-		B5D3637122A12E3200136341 /* AssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5290F3122A4B990009B09C9 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				B5290F3222A4BA0E009B09C9 /* UtilsMacros.h */,
+				B5290F3322A4BA2A009B09C9 /* URLMacros.h */,
+				B5290F3422A4BA92009B09C9 /* CommonMacros.h */,
+				B5290F3522A4BAB6009B09C9 /* FontAndColorMacros.h */,
+				B5290F3622A4BACE009B09C9 /* ThirdMacros.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		B5290F3D22A4CDF2009B09C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5290F3E22A4CE04009B09C9 /* DisplayPhotos */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5290F3E22A4CE04009B09C9 /* DisplayPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				B541D9B922A4F73E00B4291D /* WZMediaFetcher */,
+				B5290F3F22A4CE0F009B09C9 /* ECMediaFetcher */,
+			);
+			path = DisplayPhotos;
+			sourceTree = "<group>";
+		};
+		B5290F3F22A4CE0F009B09C9 /* ECMediaFetcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECMediaFetcher;
+			sourceTree = "<group>";
+		};
+		B541D9B922A4F73E00B4291D /* WZMediaFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				B541D9BA22A4F73E00B4291D /* NSObject+WZCommon.h */,
+				B541D9BB22A4F73E00B4291D /* WZToast.h */,
+				B541D9BC22A4F73E00B4291D /* WZMediaFetcher.h */,
+				B541D9BD22A4F73E00B4291D /* NSObject+WZCommon.m */,
+				B541D9BE22A4F73E00B4291D /* WZToast.m */,
+				B541D9BF22A4F73E00B4291D /* WZMediaFetcher.m */,
+			);
+			path = WZMediaFetcher;
+			sourceTree = "<group>";
+		};
 		B5D3631B22A12DC700136341 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +164,11 @@
 		B5D3632622A12DC700136341 /* ECFTPManager */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3634022A12E2300136341 /* Base */,
 				B5D3633E22A12DEB00136341 /* AppDelegate */,
 				B5D3634922A12E3200136341 /* Modules */,
+				B5290F3D22A4CDF2009B09C9 /* Utils */,
+				B5D3634022A12E2300136341 /* Base */,
+				B5290F3122A4B990009B09C9 /* Define */,
 				B5D3633D22A12DE200136341 /* Supporting Files */,
 			);
 			path = ECFTPManager;
@@ -227,9 +298,9 @@
 			isa = PBXGroup;
 			children = (
 				B5D3635A22A12E3200136341 /* Logic */,
-				B5D3635D22A12E3200136341 /* Controller */,
 				B5D3636022A12E3200136341 /* Model */,
 				B5D3636322A12E3200136341 /* View */,
+				B5D3635D22A12E3200136341 /* Controller */,
 			);
 			path = "显示FTP文件";
 			sourceTree = "<group>";
@@ -264,8 +335,8 @@
 		B5D3636322A12E3200136341 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */,
 				B5D3636522A12E3200136341 /* ChangeableCollectionViewCell.h */,
+				B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,9 +345,9 @@
 			isa = PBXGroup;
 			children = (
 				B5D3636722A12E3200136341 /* Logic */,
-				B5D3636822A12E3200136341 /* Controller */,
 				B5D3636D22A12E3200136341 /* Model */,
 				B5D3637222A12E3200136341 /* View */,
+				B5D3636822A12E3200136341 /* Controller */,
 			);
 			path = "照片库";
 			sourceTree = "<group>";
@@ -284,6 +355,8 @@
 		B5D3636722A12E3200136341 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				B5290F3A22A4BF17009B09C9 /* PhotoCellFrame.h */,
+				B5290F3B22A4BF17009B09C9 /* PhotoCellFrame.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -292,9 +365,9 @@
 			isa = PBXGroup;
 			children = (
 				B5D3636922A12E3200136341 /* PhotoDetailViewController.h */,
-				B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */,
-				B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */,
 				B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */,
+				B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */,
+				B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,10 +375,8 @@
 		B5D3636D22A12E3200136341 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3636E22A12E3200136341 /* AlbumModel.h */,
-				B5D3636F22A12E3200136341 /* AssetModel.m */,
-				B5D3637022A12E3200136341 /* AlbumModel.m */,
-				B5D3637122A12E3200136341 /* AssetModel.h */,
+				B5290F3722A4BEBE009B09C9 /* PhotoModel.h */,
+				B5290F3822A4BEBE009B09C9 /* PhotoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +384,10 @@
 		B5D3637222A12E3200136341 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5290F2E22A4B6B8009B09C9 /* PhotoCollectionViewCell.h */,
+				B5290F2F22A4B6B8009B09C9 /* PhotoCollectionViewCell.m */,
+				B541D9C322A521FE00B4291D /* testTableViewCell.h */,
+				B541D9C422A521FE00B4291D /* testTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,19 +463,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D3637522A12E3200136341 /* MainTableViewController.m in Sources */,
-				B5D3637D22A12E3200136341 /* AssetModel.m in Sources */,
+				B5290F3022A4B6B8009B09C9 /* PhotoCollectionViewCell.m in Sources */,
 				B5D3637922A12E3200136341 /* DisplayModel.m in Sources */,
 				B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */,
 				B5D3637822A12E3200136341 /* FtpViewController.m in Sources */,
 				B5D3637422A12E3200136341 /* TextfieldTableViewCell.m in Sources */,
+				B541D9C222A4F73E00B4291D /* WZMediaFetcher.m in Sources */,
 				B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */,
+				B541D9C122A4F73E00B4291D /* WZToast.m in Sources */,
 				B5D3637722A12E3200136341 /* DisplayCellFrame.m in Sources */,
-				B5D3637E22A12E3200136341 /* AlbumModel.m in Sources */,
 				B5D3634722A12E2300136341 /* RootNavigationController.m in Sources */,
 				B5D3633722A12DC800136341 /* main.m in Sources */,
+				B5290F3922A4BEBE009B09C9 /* PhotoModel.m in Sources */,
 				B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */,
 				B5D3632922A12DC700136341 /* AppDelegate.m in Sources */,
 				B5D3637322A12E3200136341 /* AddFtpTableViewController.m in Sources */,
+				B5290F3C22A4BF17009B09C9 /* PhotoCellFrame.m in Sources */,
+				B541D9C522A521FE00B4291D /* testTableViewCell.m in Sources */,
+				B541D9C022A4F73E00B4291D /* NSObject+WZCommon.m in Sources */,
 				B5D3634822A12E2300136341 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

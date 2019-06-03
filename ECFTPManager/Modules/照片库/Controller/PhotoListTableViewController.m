@@ -7,11 +7,14 @@
 //
 
 #import "PhotoListTableViewController.h"
-#import "AlbumModel.h"
+#import "WZMediaFetcher.h"
+#import "PhotoDetailViewController.h"
+#import "PhotoModel.h"
 
 @interface PhotoListTableViewController ()
 
-@property (nonatomic, strong) NSArray<AlbumModel *> *albums;
+@property (nonatomic, strong) NSArray<WZMediaAssetCollection *> *albums;
+@property (nonatomic, strong) NSArray<PhotoModel *> *assets;
 
 @end
 
@@ -39,25 +42,25 @@ static NSString *cellID = @"cellID";
             
             PHFetchResult *smartAlbumsRes = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
             
-            NSMutableArray<AlbumModel *> *tarr = [NSMutableArray array];
+            NSMutableArray<WZMediaAssetCollection *> *tarr = [NSMutableArray array];
             for (PHAssetCollection *assetCollection in smartAlbumsRes)
             {
                 PHFetchResult<PHAsset *> *fetchResult = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil];
                 if (fetchResult.count) {
                     
-                    AlbumModel *album = [[AlbumModel alloc] init];
+                    WZMediaAssetCollection *album = [[WZMediaAssetCollection alloc] init];
                     album.assetCollection = assetCollection;
                     album.title = assetCollection.localizedTitle;
                     [tarr addObject:album];
                     
-                    NSMutableArray<AssetModel *> *tmassets = [NSMutableArray array];
+                    NSMutableArray<WZMediaAsset *> *tmassets = [NSMutableArray array];
                     for (PHAsset *asset in fetchResult) {
-                        AssetModel *object = [[AssetModel alloc] init];
+                        WZMediaAsset *object = [[WZMediaAsset alloc] init];
                         object.asset = asset;
                         [tmassets addObject:object];
                     }
                     
-                    album.assetArray = [NSArray arrayWithArray:tmassets];
+                    album.mediaAssetArray = [NSArray arrayWithArray:tmassets];
                 }
             }
             self.albums = tarr;
@@ -82,15 +85,22 @@ static NSString *cellID = @"cellID";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
-    AlbumModel *model = self.albums[indexPath.row];
+    WZMediaAssetCollection *model = self.albums[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:@"file"];
     cell.textLabel.text = model.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld",(long)model.assetArray.count];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld",(long)model.mediaAssetArray.count];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
--(NSArray<AlbumModel *> *)albums
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoDetailViewController *vc = [[PhotoDetailViewController alloc] init];
+    vc.assetCollection = self.albums[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(NSArray<WZMediaAssetCollection *> *)albums
 {
     if (!_albums) {
         _albums = [NSArray array];

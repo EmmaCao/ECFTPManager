@@ -12,11 +12,19 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+//全局宏
+#import "UtilsMacros.h"
+#import "URLMacros.h"
+#import "FontAndColorMacros.h"
+#import "ThirdMacros.h"
+#import "CommonMacros.h"
+
 //基础类
 #import "RootNavigationController.h"
 
 //第三方
 
 #import <Photos/Photos.h>
+#import "WZMediaFetcher.h"
 
 #endif /* PrefixHeader_pch */
