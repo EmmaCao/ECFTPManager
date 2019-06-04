@@ -92,7 +92,7 @@
 }
 
 //3.填充数据
--(void)setModel:(DisplayModel *)model
+-(void)setModel:(FtpModel *)model
 {
     _model = model;
     

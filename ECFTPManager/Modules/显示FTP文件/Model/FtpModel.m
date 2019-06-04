@@ -1,14 +1,14 @@
 //
-//  DisplayModel.m
+//  FtpModel.m
 //  ECFTPManager
 //
-//  Created by Emma on 2019/5/30.
+//  Created by Emma on 2019/6/4.
 //  Copyright © 2019 Emma. All rights reserved.
 //
 
-#import "DisplayModel.h"
+#import "FtpModel.h"
 
-@implementation DisplayModel
+@implementation FtpModel
 
 -(DisplayCellFrame *)cellFrame
 {

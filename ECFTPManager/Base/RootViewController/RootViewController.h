@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** 基类 */
 @interface RootViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *tableView;
+
 /** 是否显示返回按钮，默认情况是YES */
 @property (nonatomic, assign) BOOL isShowBack;
 

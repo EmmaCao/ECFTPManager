@@ -7,17 +7,17 @@
 //
 
 #import "DisplayCellFrame.h"
-#import "DisplayModel.h"
+#import "FtpModel.h"
 
 @interface DisplayCellFrame()
 
-@property (nonatomic, weak) DisplayModel *model;
+@property (nonatomic, weak) FtpModel *model;
 
 @end
 
 @implementation DisplayCellFrame
 
--(instancetype)initWithModel:(DisplayModel *)model
+-(instancetype)initWithModel:(FtpModel *)model
 {
     if (self = [super init]) {
         self.model = model;

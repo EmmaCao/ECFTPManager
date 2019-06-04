@@ -9,6 +9,7 @@
 #import "PhotoDetailViewController.h"
 #import "PhotoCollectionViewCell.h"
 #import "PhotoModel.h"
+#import "ChooseFtpTableViewController.h"
 
 @interface PhotoDetailViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -16,6 +17,8 @@
 @property (nonatomic, strong) UICollectionViewFlowLayout *gridLayout;
 @property (nonatomic, strong) NSArray<PhotoModel *> *dataSource;
 @property (nonatomic, strong) UIBarButtonItem *barbtn;
+@property (nonatomic, strong) UIView *bottomView;
+@property (nonatomic, strong) NSMutableArray<PhotoModel *> *selectedImages;
 
 @end
 
@@ -39,6 +42,26 @@ static NSString *cellID = @"CollectionViewCellID";
     UIBarButtonItem *barbtn = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(edit)];
     self.navigationItem.rightBarButtonItem = barbtn;
     self.barbtn = barbtn;
+    
+    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, KScreenHeight-50, KScreenWidth, 50)];
+    bottomView.backgroundColor = [UIColor whiteColor];
+    bottomView.layer.borderColor = KLightGrayColor.CGColor;
+    bottomView.layer.borderWidth = 1;
+    [self.view addSubview:bottomView];
+    UIButton *btnCopy = [[UIButton alloc] initWithFrame:CGRectMake(KScreenWidth/2-50, 10, 100, 30)];
+    [bottomView addSubview:btnCopy];
+    [btnCopy setTitle:@"复制到" forState:UIControlStateNormal];
+    [btnCopy setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btnCopy addTarget:self action:@selector(copyTo) forControlEvents:UIControlEventTouchUpInside];
+    self.bottomView = bottomView;
+    self.bottomView.hidden = YES;
+}
+
+-(void)copyTo
+{
+    ChooseFtpTableViewController *vc = [[ChooseFtpTableViewController alloc] init];
+    RootNavigationController *nav = [[RootNavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 -(void)edit
@@ -48,6 +71,7 @@ static NSString *cellID = @"CollectionViewCellID";
         for(PhotoModel *pm in self.dataSource)
         {
             pm.editMode = NO;
+            self.bottomView.hidden = YES;
         }
     }
     else{
@@ -55,6 +79,7 @@ static NSString *cellID = @"CollectionViewCellID";
         for(PhotoModel *pm in self.dataSource)
         {
             pm.editMode = YES;
+            self.bottomView.hidden = NO;
         }
     }
     [self.collectionView reloadData];
@@ -85,6 +110,16 @@ static NSString *cellID = @"CollectionViewCellID";
     return CGSizeMake(width, pm.cellFrame.cellHeight);
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.selectedImages addObject:self.dataSource[indexPath.row]];
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.selectedImages removeObject:self.dataSource[indexPath.row]];
+}
+
 -(void)setAssetCollection:(WZMediaAssetCollection *)assetCollection
 {
     _assetCollection = assetCollection;
@@ -107,6 +142,14 @@ static NSString *cellID = @"CollectionViewCellID";
         _gridLayout.sectionInset = UIEdgeInsetsZero;
     }
     return _gridLayout;
+}
+
+-(NSMutableArray<PhotoModel *> *)selectedImages
+{
+    if (!_selectedImages) {
+        _selectedImages = [NSMutableArray array];
+    }
+    return _selectedImages;
 }
 
 @end

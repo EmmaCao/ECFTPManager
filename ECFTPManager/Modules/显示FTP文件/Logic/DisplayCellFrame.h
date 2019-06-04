@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class DisplayModel;
+@class FtpModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGRect listTimeFrame;
 @property (nonatomic, assign) CGFloat listCellHeight;
 
--(instancetype)initWithModel:(DisplayModel *)model;
+-(instancetype)initWithModel:(FtpModel *)model;
 
 @end
 

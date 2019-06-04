@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B516381722A60FC90049F783 /* ChooseFtpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516381622A60FC90049F783 /* ChooseFtpTableViewController.m */; };
+		B516381A22A611820049F783 /* ConnectFtp.m in Sources */ = {isa = PBXBuildFile; fileRef = B516381922A611820049F783 /* ConnectFtp.m */; };
+		B516381D22A6121B0049F783 /* FtpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B516381C22A6121B0049F783 /* FtpModel.m */; };
+		B516382022A61FF80049F783 /* CopyFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B516381F22A61FF80049F783 /* CopyFileViewController.m */; };
 		B5290F3022A4B6B8009B09C9 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F2F22A4B6B8009B09C9 /* PhotoCollectionViewCell.m */; };
 		B5290F3922A4BEBE009B09C9 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F3822A4BEBE009B09C9 /* PhotoModel.m */; };
 		B5290F3C22A4BF17009B09C9 /* PhotoCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B5290F3B22A4BF17009B09C9 /* PhotoCellFrame.m */; };
@@ -26,13 +30,20 @@
 		B5D3637622A12E3200136341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D3635722A12E3200136341 /* Main.storyboard */; };
 		B5D3637722A12E3200136341 /* DisplayCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635C22A12E3200136341 /* DisplayCellFrame.m */; };
 		B5D3637822A12E3200136341 /* FtpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3635F22A12E3200136341 /* FtpViewController.m */; };
-		B5D3637922A12E3200136341 /* DisplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636222A12E3200136341 /* DisplayModel.m */; };
 		B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */; };
 		B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */; };
 		B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B516381522A60FC90049F783 /* ChooseFtpTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseFtpTableViewController.h; sourceTree = "<group>"; };
+		B516381622A60FC90049F783 /* ChooseFtpTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseFtpTableViewController.m; sourceTree = "<group>"; };
+		B516381822A611820049F783 /* ConnectFtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectFtp.h; sourceTree = "<group>"; };
+		B516381922A611820049F783 /* ConnectFtp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectFtp.m; sourceTree = "<group>"; };
+		B516381B22A6121B0049F783 /* FtpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FtpModel.h; sourceTree = "<group>"; };
+		B516381C22A6121B0049F783 /* FtpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FtpModel.m; sourceTree = "<group>"; };
+		B516381E22A61FF80049F783 /* CopyFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyFileViewController.h; sourceTree = "<group>"; };
+		B516381F22A61FF80049F783 /* CopyFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyFileViewController.m; sourceTree = "<group>"; };
 		B5290F2E22A4B6B8009B09C9 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		B5290F2F22A4B6B8009B09C9 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		B5290F3222A4BA0E009B09C9 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
@@ -75,8 +86,6 @@
 		B5D3635C22A12E3200136341 /* DisplayCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayCellFrame.m; sourceTree = "<group>"; };
 		B5D3635E22A12E3200136341 /* FtpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpViewController.h; sourceTree = "<group>"; };
 		B5D3635F22A12E3200136341 /* FtpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpViewController.m; sourceTree = "<group>"; };
-		B5D3636122A12E3200136341 /* DisplayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayModel.h; sourceTree = "<group>"; };
-		B5D3636222A12E3200136341 /* DisplayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayModel.m; sourceTree = "<group>"; };
 		B5D3636422A12E3200136341 /* ChangeableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeableCollectionViewCell.m; sourceTree = "<group>"; };
 		B5D3636522A12E3200136341 /* ChangeableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeableCollectionViewCell.h; sourceTree = "<group>"; };
 		B5D3636922A12E3200136341 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
@@ -216,8 +225,8 @@
 		B5D3634422A12E2300136341 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3634522A12E2300136341 /* RootViewController.m */,
 				B5D3634622A12E2300136341 /* RootViewController.h */,
+				B5D3634522A12E2300136341 /* RootViewController.m */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -310,6 +319,8 @@
 			children = (
 				B5D3635B22A12E3200136341 /* DisplayCellFrame.h */,
 				B5D3635C22A12E3200136341 /* DisplayCellFrame.m */,
+				B516381822A611820049F783 /* ConnectFtp.h */,
+				B516381922A611820049F783 /* ConnectFtp.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -326,8 +337,8 @@
 		B5D3636022A12E3200136341 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3636122A12E3200136341 /* DisplayModel.h */,
-				B5D3636222A12E3200136341 /* DisplayModel.m */,
+				B516381B22A6121B0049F783 /* FtpModel.h */,
+				B516381C22A6121B0049F783 /* FtpModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +379,10 @@
 				B5D3636C22A12E3200136341 /* PhotoDetailViewController.m */,
 				B5D3636B22A12E3200136341 /* PhotoListTableViewController.h */,
 				B5D3636A22A12E3200136341 /* PhotoListTableViewController.m */,
+				B516381522A60FC90049F783 /* ChooseFtpTableViewController.h */,
+				B516381622A60FC90049F783 /* ChooseFtpTableViewController.m */,
+				B516381E22A61FF80049F783 /* CopyFileViewController.h */,
+				B516381F22A61FF80049F783 /* CopyFileViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -464,19 +479,22 @@
 			files = (
 				B5D3637522A12E3200136341 /* MainTableViewController.m in Sources */,
 				B5290F3022A4B6B8009B09C9 /* PhotoCollectionViewCell.m in Sources */,
-				B5D3637922A12E3200136341 /* DisplayModel.m in Sources */,
 				B5D3637A22A12E3200136341 /* ChangeableCollectionViewCell.m in Sources */,
 				B5D3637822A12E3200136341 /* FtpViewController.m in Sources */,
 				B5D3637422A12E3200136341 /* TextfieldTableViewCell.m in Sources */,
+				B516382022A61FF80049F783 /* CopyFileViewController.m in Sources */,
 				B541D9C222A4F73E00B4291D /* WZMediaFetcher.m in Sources */,
 				B5D3637C22A12E3200136341 /* PhotoDetailViewController.m in Sources */,
+				B516381D22A6121B0049F783 /* FtpModel.m in Sources */,
 				B541D9C122A4F73E00B4291D /* WZToast.m in Sources */,
+				B516381722A60FC90049F783 /* ChooseFtpTableViewController.m in Sources */,
 				B5D3637722A12E3200136341 /* DisplayCellFrame.m in Sources */,
 				B5D3634722A12E2300136341 /* RootNavigationController.m in Sources */,
 				B5D3633722A12DC800136341 /* main.m in Sources */,
 				B5290F3922A4BEBE009B09C9 /* PhotoModel.m in Sources */,
 				B5D3637B22A12E3200136341 /* PhotoListTableViewController.m in Sources */,
 				B5D3632922A12DC700136341 /* AppDelegate.m in Sources */,
+				B516381A22A611820049F783 /* ConnectFtp.m in Sources */,
 				B5D3637322A12E3200136341 /* AddFtpTableViewController.m in Sources */,
 				B5290F3C22A4BF17009B09C9 /* PhotoCellFrame.m in Sources */,
 				B541D9C522A521FE00B4291D /* testTableViewCell.m in Sources */,

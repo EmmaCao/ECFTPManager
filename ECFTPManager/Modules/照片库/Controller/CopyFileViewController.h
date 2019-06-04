@@ -1,8 +1,8 @@
 //
-//  FtpViewController.h
+//  CopyFileViewController.h
 //  ECFTPManager
 //
-//  Created by Emma on 2019/5/29.
+//  Created by Emma on 2019/6/4.
 //  Copyright © 2019 Emma. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FtpViewController : RootViewController
+@interface CopyFileViewController : RootViewController
 
 @property (nonatomic, strong) NSString *serverName;
 

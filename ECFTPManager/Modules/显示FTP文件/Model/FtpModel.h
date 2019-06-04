@@ -1,8 +1,8 @@
 //
-//  DisplayModel.h
+//  FtpModel.h
 //  ECFTPManager
 //
-//  Created by Emma on 2019/5/30.
+//  Created by Emma on 2019/6/4.
 //  Copyright © 2019 Emma. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ typedef enum : NSUInteger {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DisplayModel : NSObject
+@interface FtpModel : NSObject
 
 @property (nonatomic, assign) FtpFileType fileType;
 @property (nonatomic, strong) NSString *icon;

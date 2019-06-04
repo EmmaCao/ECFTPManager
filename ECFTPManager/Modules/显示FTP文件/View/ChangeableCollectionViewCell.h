@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DisplayModel.h"
+#import "FtpModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChangeableCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) DisplayModel *model;
+@property (nonatomic, strong) FtpModel *model;
 
 @end
 

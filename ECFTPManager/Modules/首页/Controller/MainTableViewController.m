@@ -110,6 +110,7 @@
     }
     else{
         FtpViewController *vc = [[FtpViewController alloc] init];
+        vc.serverName = self.ftps[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
